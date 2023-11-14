@@ -92,6 +92,7 @@ $("body").append(`
           <a class="button map-button" id="MiraHQ">MiraHQ</a>
           <a class="button map-button" id="Polus">Polus</a>
           <a class="button map-button" id="TheAirShip">TheAirShip</a>
+          <a class="button map-button" id="Fungle">Fungle</a>
         </div>
         <table id="rule-table">
           <tr>
