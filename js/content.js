@@ -26,7 +26,7 @@ function appendCSS(url) {
   $("body").append(`<link rel="stylesheet" href="${url}">`);
 }
 appendCSS("https://fonts.googleapis.com/icon?family=Material+Icons");
-appendCSS(chrome.runtime.getURL("css/style.css"));
+appendCSS(chrome.extension.getURL("css/style.css"));
 
 /*----ツール要素追加----*/
 $("body").prepend(`
@@ -39,8 +39,7 @@ $("body").prepend(`
 `);
 $("body").append(`
   <div class="map-container">
-    <img class="map-image" id="map-base" src="${CHROME_EXT_URL}maps/TheSkeld.png" ondragstart="return false;">
-    <img class="map-image" id="map-name-layer" src="${CHROME_EXT_URL}maps/TheSkeld_${USER_LOCALE}.png" ondragstart="return false;">
+    <img id="map" src="${CHROME_EXT_URL}TheSkeld.png" ondragstart="return false;">
   </div>
   <div class="popup_wrap">
     <input id="trigger" type="checkbox">
@@ -92,7 +91,8 @@ $("body").append(`
           <a class="button map-button" id="MiraHQ">MiraHQ</a>
           <a class="button map-button" id="Polus">Polus</a>
           <a class="button map-button" id="TheAirShip">TheAirShip</a>
-          <a class="button map-button" id="Fungle">Fungle</a>
+          <a class="button map-button" id="submerged">submerged</a>
+          <a class="button map-button" id="TheFungle">TheFungle</a>
         </div>
         <table id="rule-table">
           <tr>
